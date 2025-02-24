@@ -6,7 +6,7 @@ Create a .env file and populate with your raidbots api key
 ```
 RAIDBOTS_KEY=YOUR_KEY_HERE
 RAIDBOTS_HOST=https://www.raidbots.com
-RAIDBOTS_MIMIRON_HOST=https://mimiron.raidbots.com
+MIMIRON_HOST=https://mimiron.raidbots.com
 ```
 
 # Usage

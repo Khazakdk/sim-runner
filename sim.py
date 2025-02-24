@@ -41,9 +41,8 @@ def check_sim_status(job_id, interval=5):
         time.sleep(interval) 
 
 
-def get_sim_result(report_code, style, label, save_path=".\\results"):
+def get_sim_result(report_code, style, label="", save_path=".\\results"):
   url = f"{raidbots_url}/reports/{report_code}/index.html"
-  save_path = f"{save_path}\\{style}"
   response = requests.get(url)
   if response.status_code == 200:
     if not os.path.exists(save_path):
@@ -104,21 +103,20 @@ def find_profiles_for_style(style):
       profiles.append(file)
   return profiles
 
-def find_styles(skip):
+def find_styles():
   with os.scandir("./profiles") as styles:
     return [style.name for style in styles if style.is_dir() and style.name is not style]
 
 def sim_runner(args):
-  apl = read_apl()
+  apl = read_apl() if not args.defaultAPL else ""
 
-  fight_styles = find_styles(args.skip)
+  fight_styles = find_styles()
 
   for style in fight_styles:
     simc_input = [f"fight_style={style}\n"]
     profiles = find_profiles_for_style(style)
     for profile in profiles:
-      if not args.defaultAPL:
-        simc_input += add_apl_to_profiles(f"./profiles/{style}/{profile}", apl)
+      simc_input += add_apl_to_profiles(f"./profiles/{style}/{profile}", apl)
       simc_input += "\n"
 
     simc_input = "".join(simc_input)

@@ -1,7 +1,7 @@
 report_details=1
 chart_show_relative_difference=1
 
-deathknight="TWW1_Death_Knight_Frost_Breath_Deathbringer"
+deathknight="TWW2_Death_Knight_Frost_Breath_Deathbringer"
 deathknight.ams_absorb_percent=1
 spec=frost
 level=80
@@ -11,16 +11,16 @@ position=back
 talents=CsPAAAAAAAAAAAAAAAAAAAAAAMGAzMjZmxYYGzMzMzMGmJzYYMgZGjZMzMzMzMLzMAAAAAAAAAAAAjltBGwCYZYCZsgZYMDA
 
 head=fullthrottle_facerig,id=228858,bonus_id=10356/1527/6935,gem_id=213743
-neck=flickering_glowtorc,id=221103,bonus_id=4786/11996/3170/6935,gem_id=213458/213458
-shoulders=cauldron_champions_screamplate,id=229251,bonus_id=11996/10356/11962/6652/1579/10255
-back=consecrated_cloak,id=222817,bonus_id=12043/9627/9633/8902/12040/11109/8960,crafted_stats=49/32
-chest=cauldron_champions_ribcage,id=229256,bonus_id=11996/10356/11958/6652/1579/10255,enchant_id=7364
-wrists=test_subjects_clasps,id=228884,bonus_id=10356/1527/6935,gem_id=213458
-hands=cauldron_champions_fistguards,id=229254,bonus_id=11996/10356/11959/6652/1579/10255
-waist=automatic_waist_tightener,id=168976,bonus_id=4786/10067/11996,gem_id=213458
-legs=cauldron_champions_tattered_cuisses,id=229252,bonus_id=11996/10356/11961/6652/1579/10255,enchant_id=7601
+neck=undermine_mercs_dog_tags,id=232663,bonus_id=10356/1527/8781,gem_id=213458/213458
+shoulders=cauldron_champions_screamplate,id=229251,bonus_id=11996/10356/11962/6652/1527/10255
+back=chef_chewies_towel,id=221054,bonus_id=4786/11996/3170
+chest=cauldron_champions_ribcage,id=229256,bonus_id=11996/10356/11958/6652/1527/10255,enchant_id=7364
+wrists=everforged_vambraces,id=222435,bonus_id=12043/9627/9633/8902/12040/11109/8960/10878,gem_id=213458,crafted_stats=49/32
+hands=cauldron_champions_fistguards,id=229254,bonus_id=11996/10356/11959/6652/1527/10255
+waist=heaviestweight_title_belt,id=228873,bonus_id=10356/1527/6935,gem_id=213458
+legs=cauldron_champions_tattered_cuisses,id=229252,bonus_id=11996/10356/11961/6652/1527/10255,enchant_id=7601
 feet=cutthroat_competition_stompers,id=228887,bonus_id=10356/1527
-finger1=85year_tenure_ring,id=221198,bonus_id=4786/11996/3170/6935,gem_id=213458/213458,enchant_id=7334
+finger1=cyrces_circlet,id=228411,bonus_id=12025/1511,gem_id=228638/228639/228646,enchant_id=7334
 finger2=the_jastor_diamond,id=231265,bonus_id=10356/1527/6935,gem_id=213458/213458,enchant_id=7334
 trinket1=eye_of_kezan,id=230198,bonus_id=10356/1527
 trinket2=house_of_cards,id=230027,bonus_id=10356/1527
@@ -37,16 +37,16 @@ position=back
 talents=CsPAAAAAAAAAAAAAAAAAAAAAAMGAzMjZmxYYGzMzMzMGmJzYMMgZGzMjZmZmZmZZGAAAAAAAAAAAAjltBGwCYZYCZsghZMDA
 
 head=fullthrottle_facerig,id=228858,bonus_id=10356/1527/6935,gem_id=213743
-neck=flickering_glowtorc,id=221103,bonus_id=4786/11996/3170/6935,gem_id=213458/213458
-shoulders=cauldron_champions_screamplate,id=229251,bonus_id=11996/10356/11962/6652/1579/10255
-back=consecrated_cloak,id=222817,bonus_id=12043/9627/9633/8902/12040/11109/8960,crafted_stats=49/32
-chest=cauldron_champions_ribcage,id=229256,bonus_id=11996/10356/11958/6652/1579/10255,enchant_id=7364
-wrists=test_subjects_clasps,id=228884,bonus_id=10356/1527/6935,gem_id=213458
-hands=cauldron_champions_fistguards,id=229254,bonus_id=11996/10356/11959/6652/1579/10255
-waist=automatic_waist_tightener,id=168976,bonus_id=4789/11996/11359/6935,gem_id=213458
-legs=cauldron_champions_tattered_cuisses,id=229252,bonus_id=11996/10356/11961/6652/1579/10255,enchant_id=7601
+neck=undermine_mercs_dog_tags,id=232663,bonus_id=10356/1527/8781,gem_id=213458/213458
+shoulders=cauldron_champions_screamplate,id=229251,bonus_id=11996/10356/11962/6652/1527/10255
+back=chef_chewies_towel,id=221054,bonus_id=4786/11996/3170
+chest=cauldron_champions_ribcage,id=229256,bonus_id=11996/10356/11958/6652/1527/10255,enchant_id=7364
+wrists=everforged_vambraces,id=222435,bonus_id=12043/9627/9633/8902/12040/11109/8960/10878,gem_id=213458,crafted_stats=49/32
+hands=cauldron_champions_fistguards,id=229254,bonus_id=11996/10356/11959/6652/1527/10255
+waist=heaviestweight_title_belt,id=228873,bonus_id=10356/1527/6935,gem_id=213458
+legs=cauldron_champions_tattered_cuisses,id=229252,bonus_id=11996/10356/11961/6652/1527/10255,enchant_id=7601
 feet=cutthroat_competition_stompers,id=228887,bonus_id=10356/1527
-finger1=85year_tenure_ring,id=221198,bonus_id=4786/11996/3170/6935,gem_id=213458/213458,enchant_id=7334
+finger1=cyrces_circlet,id=228411,bonus_id=12025/1511,gem_id=228638/228639/228646,enchant_id=7334
 finger2=the_jastor_diamond,id=231265,bonus_id=10356/1527/6935,gem_id=213458/213458,enchant_id=7334
 trinket1=eye_of_kezan,id=230198,bonus_id=10356/1527
 trinket2=house_of_cards,id=230027,bonus_id=10356/1527
@@ -54,7 +54,7 @@ main_hand=remixed_ignition_saber,id=228895,bonus_id=10356/1527,enchant_id=3847
 off_hand=charged_slicer,id=222451,bonus_id=12043/9627/9633/8902/12040/11300/8960,enchant_id=3368,crafted_stats=49/32
 
 
-deathknight="TWW1_Death_Knight_Frost_Breath_Rider"
+deathknight="TWW2_Death_Knight_Frost_Breath_Rider"
 deathknight.ams_absorb_percent=1
 spec=frost
 level=80
@@ -64,19 +64,18 @@ position=back
 talents=CsPAAAAAAAAAAAAAAAAAAAAAAMAYmZMzMGDzYmZmZmxwMZGjZMgZGjZMzMzMzMLzMAAAAAAAAAAAAgNzihBGY20QDbYMGzAA
 
 head=fullthrottle_facerig,id=228858,bonus_id=10356/1527/6935,gem_id=213743
-neck=semicharmed_amulet,id=228841,bonus_id=10356/1527/6935,gem_id=213458/213458
-shoulders=cauldron_champions_screamplate,id=229251,bonus_id=11996/10356/11962/6652/1579/10255
-back=consecrated_cloak,id=222817,bonus_id=12043/9627/9633/8902/12040/11109/8960,crafted_stats=49/36
-chest=cauldron_champions_ribcage,id=229256,bonus_id=11996/10356/11958/6652/1579/10255,enchant_id=7364
-wrists=revvedup_vambraces,id=228868,bonus_id=10356/1527/6935,gem_id=213458
-hands=cauldron_champions_fistguards,id=229254,bonus_id=11996/10356/11959/6652/1579/10255
-waist=automatic_waist_tightener,id=168976,bonus_id=4786/10067/11996,gem_id=213458
-legs=cauldron_champions_tattered_cuisses,id=229252,bonus_id=11996/10356/11961/6652/1579/10255,enchant_id=7601
-feet=riks_walkin_boots,id=228874,bonus_id=10356/1527
-finger1=faded_championship_ring,id=228840,bonus_id=10356/1527/6935/1808,gem_id=213458/213455,enchant_id=7340
-finger2=the_jastor_diamond,id=231265,bonus_id=10356/1527/6935/1808,gem_id=213458/213479,enchant_id=7334
+neck=undermine_mercs_dog_tags,id=232663,bonus_id=10356/1527/8781,gem_id=213458/213458
+shoulders=cauldron_champions_screamplate,id=229251,bonus_id=11996/10356/11962/6652/1527/10255
+back=chef_chewies_towel,id=221054,bonus_id=4786/11996/3170
+chest=cauldron_champions_ribcage,id=229256,bonus_id=11996/10356/11958/6652/1527/10255,enchant_id=7364
+wrists=everforged_vambraces,id=222435,bonus_id=12043/9627/9633/8902/12040/11109/8960/10878,gem_id=213458,crafted_stats=49/32
+hands=cauldron_champions_fistguards,id=229254,bonus_id=11996/10356/11959/6652/1527/10255
+waist=heaviestweight_title_belt,id=228873,bonus_id=10356/1527/6935,gem_id=213458
+legs=cauldron_champions_tattered_cuisses,id=229252,bonus_id=11996/10356/11961/6652/1527/10255,enchant_id=7601
+feet=cutthroat_competition_stompers,id=228887,bonus_id=10356/1527
+finger1=cyrces_circlet,id=228411,bonus_id=12025/1511,gem_id=228638/228639/228646,enchant_id=7334
+finger2=the_jastor_diamond,id=231265,bonus_id=10356/1527/6935,gem_id=213458/213458,enchant_id=7334
 trinket1=eye_of_kezan,id=230198,bonus_id=10356/1527
 trinket2=house_of_cards,id=230027,bonus_id=10356/1527
-main_hand=remixed_ignition_saber,id=228895,bonus_id=10356/1527,enchant_id=3370
+main_hand=remixed_ignition_saber,id=228895,bonus_id=10356/1527,enchant_id=3847
 off_hand=charged_slicer,id=222451,bonus_id=12043/9627/9633/8902/12040/11300/8960,enchant_id=3368,crafted_stats=49/32
-
