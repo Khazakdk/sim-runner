@@ -1,5 +1,6 @@
 import datetime
 import os
+import sys
 import time
 import dotenv
 import requests
@@ -12,10 +13,15 @@ debug = False
 raidbots_key = os.getenv("RAIDBOTS_KEY")
 raidbots_url = os.getenv("RAIDBOTS_HOST")
 mimiron_url = os.getenv("MIMIRON_HOST")
+
 headers = {
   "Content-Type": "application/json",
   "User-Agent": "Khazak APL tester"
 }
+
+base_path = os.path.dirname(os.path.realpath(sys.argv[0]))
+profiles_path = os.path.join(base_path, "profiles")
+results_path = os.path.join(base_path, "results")
 
 def check_sim_status(job_id, interval=5):
     url = f"{raidbots_url}/api/job/{job_id}"
@@ -41,7 +47,7 @@ def check_sim_status(job_id, interval=5):
         time.sleep(interval) 
 
 
-def get_sim_result(report_code, style, label="", save_path=".\\results"):
+def get_sim_result(report_code, style, label="", save_path=results_path):
   url = f"{raidbots_url}/reports/{report_code}/index.html"
   response = requests.get(url)
   if response.status_code == 200:
@@ -67,7 +73,8 @@ def add_apl_to_profiles(file_path, apl):
     
     return new_lines
 
-def read_apl(apl_path="./profiles/apl.inc"):
+def read_apl():
+   apl_path = os.path.join(profiles_path, "apl.inc")
    with open(apl_path, 'r') as file:
       return file.read()
 
@@ -81,6 +88,7 @@ def sim(simc_input, style, label, ptr=False):
   }
   raidbots_host = mimiron_url if ptr else raidbots_url
   response = requests.post(raidbots_host + "/sim", headers=headers, data=json.dumps(body).encode("utf8"))
+  response.raise_for_status()
 
   print(response.json())
   sim_id = response.json()["simId"]
@@ -98,13 +106,13 @@ def sim(simc_input, style, label, ptr=False):
 
 def find_profiles_for_style(style):
   profiles = []
-  for file in os.listdir(f"./profiles/{style}/"):
+  for file in os.listdir(f"{profiles_path}/{style}/"):
     if file.endswith(".simc"):
       profiles.append(file)
   return profiles
 
 def find_styles():
-  with os.scandir("./profiles") as styles:
+  with os.scandir(profiles_path) as styles:
     return [style.name for style in styles if style.is_dir() and style.name is not style]
 
 def sim_runner(args):
@@ -116,7 +124,7 @@ def sim_runner(args):
     simc_input = [f"fight_style={style}\n"]
     profiles = find_profiles_for_style(style)
     for profile in profiles:
-      simc_input += add_apl_to_profiles(f"./profiles/{style}/{profile}", apl)
+      simc_input += add_apl_to_profiles(f"{profiles_path}/{style}/{profile}", apl)
       simc_input += "\n"
 
     simc_input = "".join(simc_input)
